@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Rest Countries API | Frontend Mentor</title>
+</head>
+<body>
+    <header>
+        <p>Where in the world? </p>
+        <button class="darkModeBtn" id="darkBtn" onclick="changeStyle()">
+            <i class="fa-solid fa-moon moon" id = "moon"></i>
+            <p id = "darkModeText">Dark Mode</p>
+        </button>
+    </header>
+    <main id="main">
+        <article>
+            <div class="input">
+                <input type="text" placeholder="Search For a Country" class="inputBox" id = "inputBox">
+                <button class="searchBtn" id="inputBtn" onclick="showUp()"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+            </div>
+            <div class="dropdown">
+                <button class="dropBtn" id="dropBtn" onclick="drop()">Filter by Region</button>
+                <div class="dropdownContent" id="dropdown-menu">
+                    <p class="dropSelector" onclick="selectRegion('Any')">Any</p>
+                    <p class="dropSelector" onclick="selectRegion('Africa')">Africa</p>
+                    <p class="dropSelector" onclick="selectRegion('America')">America</p>
+                    <p class="dropSelector" onclick="selectRegion('Asia')">Asia</p>
+                    <p class="dropSelector" onclick="selectRegion('Europe')">Europe</p>
+                    <p class="dropSelector" onclick="selectRegion('Oceania')">Oceania</p>
+                </div>
+            </div>
+        </article>
+        <section>
+            <div class = "sectionRow">
+                <div id="country1" class="country">
+                        <img src="" id="img1">
+                    <div class="content">
+                        <button class="name" id="name1" onclick="showUp(this.textContent)"></button>
+                        <p id="population1"></p>
+                        <p id="capital1"></p>
+                    </div>
+                </div>
+                <div id="country2" class="country">
+                    <img src="" id="img2">
+                    <div class="content">
+                        <button class="name" id="name2" onclick="showUp(this.textContent)"></button>
+                        <p id="population2"></p>
+                        <p id="capital2"></p>
+                    </div>
+                </div>
+                <div id="country3" class="country">
+                    <img src="" id="img3">
+                    <div class="content">
+                        <button class="name" id="name3" onclick="showUp(this.textContent)"></button>
+                        <p id="population3"></p>
+                        <p id="capital3"></p>
+                    </div>
+                </div>
+                <div id="country4" class="country">
+                    <img src="" id="img4">
+                    <div class="content">
+                        <button class="name" id="name4" onclick="showUp(this.textContent)"></button>
+                        <p id="population4"></p>
+                        <p id="capital4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class = "sectionRow">
+                <div id="country5" class="country">
+                    <img src="" id="img5">
+                    <div class="content">
+                        <button class="name" id="name5" onclick="showUp(this.textContent)"></button>
+                        <p id="population5"></p>
+                        <p id="capital5"></p>
+                    </div>
+                </div>
+                <div id="country6" class="country">
+                    <img src="" id="img6">
+                    <div class="content">
+                        <button class="name" id="name6" onclick="showUp(this.textContent)"></button>
+                        <p id="population6"></p>
+                        <p id="capital6"></p>
+                    </div>
+                </div>
+                <div id="country7" class="country">
+                    <img src="" id="img7">
+                    <div class="content">
+                        <button class="name" id="name7" onclick="showUp(this.textContent)"></button>
+                        <p id="population7"></p>
+                        <p id="capital7"></p>
+                    </div>
+                </div>
+                <div id="country8" class="country">
+                    <img src="" id="img8">
+                    <div class="content">
+                        <button class="name" id="name8" onclick="showUp(this.textContent)"></button>
+                        <p id="population8"></p>
+                        <p id="capital8"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer id="footer">
+    <button class="backButton" onclick="showDown()">Back</button>
+    <div class="detailed">
+        <img src="" id="detailedImg">
+        <div>
+            <p id="countryName"></p>
+            <div>
+                <div>
+                    <p id="nativeName"></p>
+                    <p id="population"></p>
+                    <p id="region"></p>
+                    <p id="subregion"></p>
+                    <p id="capital"></p>
+                </div>
+                <div>
+                    <p id="topLevel"></p>
+                    <p id="currency"></p>
+                    <p id="languages"></p>
+                </div>
+            </div>
+            <div id="borders">
+                <p>Border Countries</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>

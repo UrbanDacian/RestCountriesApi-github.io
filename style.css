@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    background-color: hsl(0, 0%, 95%);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.moon{
+    color: black;
+}
+
+.darkModeBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    gap: 10px;
+}
+main{
+    padding: 10px 50px;
+    background-color: hsl(0, 0%, 95%);
+}
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.inputBox{
+    display: flex;
+    margin: 0;
+    border: none;
+    max-height: 50px;
+    font-size: 20px;
+    background-color: hsl(0, 0%, 95%);
+}
+.searchBtn{
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    max-height: 50px;
+}
+.dropBtn{
+    font-size: 14px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    width: 115px;
+    height: 20px;
+}
+.dropdownContent{
+    position: relative;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: -170px;
+    background-color: hsl(0, 0%, 95%);
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background-color: hsl(0, 0%, 95%);
+}
+.dropSelector{
+    margin-top: 0;
+    border: none;
+    font-size: 14px;
+    background-color: hsl(0, 0%, 95%);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.sectionRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 95%);
+}
+.country{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: 0;
+    background-color: hsl(0, 0%, 95%);
+}
+.name{
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    margin-left: -7px;
+}
+.content{
+    padding: 20px;
+    justify-content: flex-start;
+    border: none;
+}
+footer{
+    height: 97vh;
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    padding: 75px;
+}
+.backButton{
+    border: none;
+}
+.detailed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
