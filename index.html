@@ -35,8 +35,8 @@
                 </div>
             </div>
         </article>
-        <section>
-            <div class = "sectionRow">
+        <section id = "section">
+            <div class = "sectionRow" id="SectionRow2">
                 <div id="country1" class="country">
                         <img src="" id="img1">
                     <div class="content">
@@ -70,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <div class = "sectionRow">
+            <div class = "sectionRow" id="SectionRow1">
                 <div id="country5" class="country">
                     <img src="" id="img5">
                     <div class="content">
@@ -107,27 +107,28 @@
         </section>
     </main>
 <footer id="footer">
-    <button class="backButton" onclick="showDown()">Back</button>
+    <button class="backButton" onclick="showDown()" id="backBtn">Back</button>
     <div class="detailed">
-        <img src="" id="detailedImg">
+        <img class="image" src="" id="detailedImg">
         <div>
-            <p id="countryName"></p>
-            <div>
+            <p class = "extendedName" id="countryName"></p>
+            <div class="columns">
                 <div>
-                    <p id="nativeName"></p>
-                    <p id="population"></p>
-                    <p id="region"></p>
-                    <p id="subregion"></p>
-                    <p id="capital"></p>
+                    <p id="nativeName" class="text"></p>
+                    <p id="population" class="text"></p>
+                    <p id="region" class="text"></p>
+                    <p id="subregion" class="text"></p>
+                    <p id="capital" class="text"></p>
                 </div>
                 <div>
-                    <p id="topLevel"></p>
-                    <p id="currency"></p>
-                    <p id="languages"></p>
+                    <p id="topLevel" class="text"></p>
+                    <p id="currency" class="text"></p>
+                    <p id="languages" class="text"></p>
                 </div>
             </div>
-            <div id="borders">
-                <p>Border Countries</p>
+            <div id="borders" class="borders">
+                <p>Border Countries: </p>
+                <div id="bordersExtended" class = "bordersExtended"></div>
             </div>
         </div>
 

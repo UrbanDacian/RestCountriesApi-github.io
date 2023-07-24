@@ -102,13 +102,15 @@ section{
     justify-content: center;
     align-content: center;
     border: 0;
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 90%);
 }
 .name{
     text-align: center;
     border: none;
     font-size: 20px;
     margin-left: -7px;
+    background-color: hsl(0, 0%, 90%);
+
 }
 .content{
     padding: 20px;
@@ -116,17 +118,91 @@ section{
     border: none;
 }
 footer{
-    height: 97vh;
-    width: 100vw;
     display: none;
     flex-direction: column;
-    padding: 75px;
+    justify-content: center;
+    gap: 30px;
+    padding: 150px;
 }
 .backButton{
-    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid lightgrey;
+    box-shadow: 2px 2px 4px grey;
 }
 .detailed{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.image{
+    width: 40vw;
+}
+
+.columns{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.extendedName{
+    font-size: 30px;
+}
+
+.borders{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.borderCountry{
+    text-align: center;
+    align-items: center;
+    width: 60px;
+    height: 25px;
+    border: 2px solid lightgrey;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 2px 4px 4px grey;
+    color: black;
+}
+.bordersExtended{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    .sectionRow{
+        flex-direction: column;
+    }
+    article{
+        flex-direction: column;
+    }
+    .detailed{
+        flex-direction: column;
+    }
+    .columns{
+        flex-direction: column;
+    }
+    footer{
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .text{
+        text-align: center;
+    }
+    .image{
+        align-self: center;
+    }
+    .extendedName{
+        text-align: center;
+    }
+    .borders{
+        flex-direction: column;
+    }
 }
