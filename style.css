@@ -123,6 +123,7 @@ footer{
     justify-content: center;
     gap: 30px;
     padding: 150px;
+    overflow: hidden;
 }
 .backButton{
     width: 100px;
@@ -189,9 +190,9 @@ footer{
         flex-direction: column;
     }
     footer{
-        padding: 50px;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
     .text{
         text-align: center;
@@ -204,5 +205,9 @@ footer{
     }
     .borders{
         flex-direction: column;
+    }
+    .borderCountry{
+        width: 40px;
+        height: 20px;
     }
 }
